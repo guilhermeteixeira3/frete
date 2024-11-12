@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Frete para Caminhoneiros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Frete</h1>
+        
+        <form id="freteForm">
+            <label for="distancia">Distância (km):</label>
+            <input type="number" id="distancia" required>
+
+            <label for="consumoMedio">Consumo Médio (km/l):</label>
+            <input type="number" id="consumoMedio" required>
+
+            <label for="precoCombustivel">Preço do Combustível (R$):</label>
+            <input type="number" id="precoCombustivel" required>
+
+            <label for="margemLucro">Margem de Lucro (%):</label>
+            <input type="number" id="margemLucro" required>
+
+            <label for="custoPedagio">Custo de Pedágios (R$):</label>
+            <input type="number" id="custoPedagio">
+
+            <label for="outrosCustos">Outros Custos (R$):</label>
+            <input type="number" id="outrosCustos">
+
+            <label for="valorFrete">Valor Oferecido para o Frete (R$):</label>
+            <input type="number" id="valorFrete" required>
+
+            <label for="velocidadeMedia">Velocidade Média (km/h):</label>
+            <input type="number" id="velocidadeMedia" required>
+
+            <button type="button" onclick="calcularFrete()">Calcular</button>
+        </form>
+
+        <div id="resultados"></div>
+    </div>
+
+    <script src="sketch.js"></script>
+</body>
+</html>
+ 
